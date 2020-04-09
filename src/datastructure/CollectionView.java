@@ -8,7 +8,7 @@ public class CollectionView {
 
 public static void main(String[] args) {
         /*
-         Map is created and inserted some data.Retrieve the Collection view of values present in map
+         Map is created and inserted some data. Retrieve the Collection view of values present in map
          */
         HashMap<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "NYC");

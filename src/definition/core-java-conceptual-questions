@@ -1,59 +1,159 @@
 Please answer the below core-java Questions:
 
 What is programing language?
+
 A. is a written language that tells the computer what to do.
 
 
 What jdk contains or composed of and define each components?
-A.
 
-
+A. JDK stands for Java Development Kit. It includes the Java Runtime Environment (JRE),
+an interpreter (Java), a compiler (javac), an archive (jar), a documentation generator (Javadoc),
+debugger
 
 
 
 What is IDE?
-A.
+A. IDE stands for Integrated Development Environment,
+they allows programmers to consolidate the different parts of writing a computer program.
+storing, creating, reading files etc.
+
 
 
 
 What are the IDEs available in the market to support java?
-A.
+A. Eclipse, IntelliJ, DR JAVA, Code envy etc.
 
 
 
 Explain the entire java life cycle.
+
+Ans: All source code is first written in plain text files ending with .java. Those source files are
+then compiled into .class files by the javac compiler. The .class files contains byte codes that the
+JVM can read. Then the class loader runs your application in JVM. EX: Code/text Editor > source file >
+java compiler > byte code > class loader > bytecode verifier > interpreter > then prints.
+
 what is class?
+Ans: Class is like a blue print of an object.
+
 What is object?
+Ans: Object is an instance of a class.
+
 What is the entry point of an application?
+Ans: The "main method is the entry point"
 Why main is static?
+Ans: So the compiler can call it without an object being created of it. Its for easier accessability
+reasons.
+
 Which class is the superclass of all classes?
+Ans: The Object class is the super class of all classes.
+
 What is difference between path and classpath variables?
+Ans:Path is an environment variable it is used by the operating system to find the executables.
+Classpath is an environment variable which is used by the Java compiler to find the path.
+
 What is the difference between an Interface and Abstract class?
+Ans: The abstract class can only be extended once where the interfaces can be implemented multiple
+ times.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Ans: No you cannot make an object out of Interface and Abstract classes. They must be extended or
+implemented by a concrete class.
+
 what is Access Specifier?
+Ans: It controls the access of a class, methods, constructors and variables.
+
 What is OOP ? Define each feature of java OOP.
+Ans: OOP stands for Object Oriented Program.
+1. Encapsulation: is to make sure that "sensitive" data is hidden from users by declaring "private".
+2. Inheritance: is the process of Inheriting variable, methods and other fields from a parent class
+   by either extending a class or implementing an interface.
+3. Polymorphism: means using methods and fields inherited from other classes and using the same methods
+   to perform different tasks multiple times. Meaning they can take on many forms.
+4. Abstraction: is the process of hiding certain details and showing only essential information to
+   the user. It is done by naming a class or interface Abstract.
+
 What is Java Package and which package is imported by default?
+Ans: A Java package organizes Java classes and classes in the packege can access each other private
+     attributes, methods. java.lang and the current package is automatically imported by default.
+
 What is API? Name list of API that you have used so far.
+Ans: API stands for Application Programming interface. (Scanner, Class, List, Maps, HashMaps, System etc..)
+
 Does java support multiple inheritance, explain why or why not?
+Ans: Java does support multiple inheritance by interface only!
+
 What is method overloading and when it happens?
+Ans: Overloading is when two methods have the same name but different parameter. It happens in the
+"Compile time".
+
 Explain exceptions in java and how to handle it.
+Ans: occurs during execution. It is performed by using the try..catch method to wrap a program with
+just in case there is an error the application wont crash on you.
+
 What is static keyword in java? How it has been used in variables and methods ?
+Ans: static keyword is used for memeory management. static variable and methods are constant meaning
+they will always be the same. Static method must be used with static variable.
+
 What is final and how it has been used variables and methods?
+Ans: final is a access modifier. It is used when you are declaring a constant class, method or other
+attributes.
 What is final, finally and finalize?
+    final: is a access modifier. It is used when you are declaring a unchangeable method or variable,
+     final class cant be inherited. It cannot be changed by other user.
+    finally: is used with the try..catch exception handling. Codes in the finally bracket will be
+    executed no matter what. regardless if the exeception handling occurs or not.
+    finalize: is used to perform clean up processing just before object is garbage collected.
+
 What is a constructor ?
+Ans: initializes a newly created object. A constructor must have the same name as the class!
+
 Can we have multiple constructors in a class?
+Ans: Yes. You can have as many as you need. Java automatically creates a default constructor for you
+with no parameter accepted.
+
 If we don't have a constructor declared, what is called during the object creation?
+Ans: the default constructor created by Java.
+
 What is "this" keyword in java ?
+Ans: it is a reference variable in java. It can be used to refer instance variable of current class.
+It can be used to invoke or initiate current class constructor. It can be passed as an argument
+in the method call.
+
 What is "super" keyword in java? How many possible way can you use?
+Ans: it is used inside a subclass to call upon a method or constructor in the parent class.
+
 What is JVM stand for ?
+Ans: Java Virtual Machine.
+
 Is JVM platform independent?
+Ans: JVM is not independent. it is used to both translate the bytecode into the machine language
+for a particular computer, and actually run the corresponding machine language instructions as well.
+
 What version of java are you using?
+Ans: java version 1.8.0_241.
+
 What is JAR stand for ?
+Ans: Java ARchive. it is used for data archiving, data compression and decompression etc...
+
 What is the difference between JDK and JVM?
+Ans: JDK is a development kit which provides java libraries w/ necessary components to run java code.
+     JVM is the Java Virtual Machine which provides the environment to execute byte codes and actually
+     executes it.
 What is the difference between JVM and JRE?
+Ans: JDK is for development purpose whereas JRE is for running the java programs. JDK and JRE both
+contains JVM so that we can run our java program. JVM is the heart of java programming language and
+provides platform independence.
+
 What is compile time and run time?
+Ans: Compile-time is where the code you entered is converted to executable code.
+While Run-time is the where the executable is being ran.
+
 What is heap?
+Ans: it is the run time data area where objects are stored and also destroyed if unnecessay to make
+space in the memrory.
 How java manage it's memory?
+Ans: by using the java garbage collector which deletes objects thats unnecessary to save memory space.
+
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
 What is Serialization and Deserialization?
