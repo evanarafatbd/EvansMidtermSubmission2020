@@ -156,13 +156,25 @@ Ans: by using the java garbage collector which deletes objects thats unnecessary
 
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
+Ans: is a class that can have only one object created of it. To do that make that class constructor
+private.
 What is Serialization and Deserialization?
 when to use transient variable in java?
 Difference between while and do..while loop?
+Ans: while loops check the condition first, if true it will run the function. Do...while loops will run
+the function atleast once and then check to if the condition given is true if no it will not run it again.
+
 What is Enum?
+Ans: Enum is a special class created when you want constant (Unchangeable) variables and functions.
+to declare a enum class just type the word enum in the class.
+
 What is Iterator?
+Ans: is an interface in java.
+
 Which one will take more memory, an int or Integer?
+Ans: Integer.
 Why is String Immutable in Java?
+Ans:
 What is constructor chaining in Java?
 The difference between Serial and Parallel Garbage Collector?
 What is JIT stands for?
@@ -176,6 +188,8 @@ What is Framework?
 What are the testing Framework available in java?
 Difference between jUnit and testNG?
 What are the dependencies for this project?
+Ans: go to file intellij, click project structure, then click dependencies to view all of them.
+
 what is dependency injection in java?
 What is static binding and dynamic binding?
 
