@@ -35,18 +35,23 @@ public class Numbers {
         printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
-
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "Insertion_sort", "SortingNumbers");
+		numbers = connectToSqlDB.readDataBase("Insertion_sort", "SortingNumbers");
 		//By following above, Continue for rest of the Sorting Algorithm....
 
 		//BUBBLE SORT
 		algo.bubbleSort(num);
 		long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
-
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "Bubble_sort", "SortingNumbers");
+		numbers = connectToSqlDB.readDataBase("Bubble_sort", "SortingNumbers");
+		printValue(numbers);
+		randomize (num, n);
 
 
 

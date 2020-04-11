@@ -23,4 +23,9 @@ public interface Employee {
 	//employee benefit
 	public void benefitLayout();
 
+	//employee payment type
+	public void directDeposit();
+	public void checkPickUp();
+	public void mailIn();
+
 }
