@@ -1,81 +1,159 @@
 package design;
 
+import org.testng.reporters.XMLConstants;
+
 import java.util.Scanner;
 
-public class EmployeeInfo extends EmpAbstrctClass{
-	
- /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
- * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
- * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
- * go to FortuneEmployee class to apply all the fields and attributes.
- * 
- * Important: YOU MUST USE the 
- * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
- * Use all kind of keywords(super,this,static,final........)
- * Implement Nested class.
- * Use Exception Handling.
- *
- */
+public class EmployeeInfo extends EmpAbstrctClass {
+
+	/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
+	 * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
+	 * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
+	 * go to FortuneEmployee class to apply all the fields and attributes.
+	 *
+	 * Important: YOU MUST USE the
+	 * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
+	 * Use all kind of keywords(super,this,static,final........)
+	 * Implement Nested class.
+	 * Use Exception Handling.
+	 *
+	 */
 
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
+
 	static String companyName;
-	
+	private String name;
+	private int employeeId;
+	private int salary;
+	private int performance;
+	public static int years;
+	public static double Salary;
+	private String dept;
+	double total;
+
+
+	public static String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		EmployeeInfo.companyName = companyName;
+	}
+
+
+
+
 	/*
-	 * You must implement the logic for below 2 methods and 
+	 * You must implement the logic for below 2 methods and
 	 * following 2 methods are prototype as well for other methods need to be design,
 	 * as you will come up with the new ideas.
 	 */
-	
+
 	/*
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
-		
+	public EmployeeInfo() {
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+
+	;
+
+	public EmployeeInfo(int employeeId) {
+		this.employeeId = employeeId;
 	}
-	
+
+	public EmployeeInfo(String name, int employeeId) {
+		this.name = name;
+		this.employeeId = employeeId;
+
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
-	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on. 
+	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on.
 	 * You can set arbitrary number for performance.
 	 * So you probably need to send 2 arguments.
-	 * 
+	 *
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+	public double calculateEmployeeBonus(double salary) {
+		double performence;
 
+		performence = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter How Many years worked");
+		years = sc.nextInt();
+
+		if (years >= 5) {
+			performence = .20;
+			System.out.println("Wow! Excelent Performence and keep up the good work");
+		} else if (years <= 4 && years >= 3) {
+			performence = .10;
+			System.out.println("Good! Try more to keep up the good work");
+		} else if (years <= 2 && years >= 1) {
+			performence = .05;
+			System.out.println("You are almost there !!");
+		} else {
+			System.out.println("Sorry Bonuses are only for employees that have worked more than a year");
+		}
+		double total = Salary * performence;
+
+		System.out.println("Epmloyees bonus is " + total + " $");
 
 
 		return total;
 	}
-	
+
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
-	 * 
+	 *
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
-		Scanner sc  = new Scanner(System.in);
+	public static double calculateEmployeePension(int salary) {
+		double total = 0;
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
 		String todaysDate = sc.nextLine();
-        String convertedJoiningDate = DateConversion.convertDate(joiningDate);
-        String convertedTodaysDate = DateConversion.convertDate(todaysDate);
+		String convertedJoiningDate = DateConversion.convertDate(joiningDate);
+		String convertedTodaysDate = DateConversion.convertDate(todaysDate);
 
-        //implement numbers of year from above two dates
+		//implement numbers of year from above two dates
 		//Calculate pension
 
+		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length() - 4);
+
+		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length() - 4);
+
+		int start = Integer.parseInt(startYear);
+		int current = Integer.parseInt(currentYear);
+
+		if ((current - start) >= 10) {
+			total = salary * .5;
+		} else if ((current - start) == 9) {
+			total = salary * .4;
+		} else if ((current - start) == 8) {
+			total = salary * .3;
+		} else if ((current - start) == 7) {
+			total = salary * .25;
+		} else if ((current - start) == 6) {
+			total = salary * .2;
+		} else if ((current - start) == 5) {
+			total = salary * .1;
 
 
+		} else if ((current - start) <= 4) {
+			total = 0;
+			System.out.println("Sorry you have to work more than 5 years to be eligible for pension ! ");
+		} else {
+			System.out.println("you have a problem");
+		}
+
+		System.out.println("Employee Pension is $" + total);
 		return total;
 	}
 
@@ -121,9 +199,11 @@ public class EmployeeInfo extends EmpAbstrctClass{
 
 	private static class DateConversion {
 
-		public DateConversion(Months months){}
+		public DateConversion(Months months) {
+		}
+
 		public static String convertDate(String date) {
-			String [] extractMonth = date.split(",");
+			String[] extractMonth = date.split(",");
 			String givenMonth = extractMonth[0];
 			int monthDate = whichMonth(givenMonth);
 			String actualDate = monthDate + "/" + extractMonth[1];
@@ -176,6 +256,12 @@ public class EmployeeInfo extends EmpAbstrctClass{
 			}
 			return date;
 
+		}
+	}
+
+	public class NameClass {
+		public void NameMethod() {
+			System.out.println(companyName);
 		}
 	}
 }

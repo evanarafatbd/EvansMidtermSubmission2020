@@ -14,7 +14,10 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+
+		EmployeeInfo empInfo = new EmployeeInfo("Evan Arafat", 237353);
+		empInfo.calculateEmployeeBonus(90000.00);
+		empInfo.employeeId();
 
 
 	}
