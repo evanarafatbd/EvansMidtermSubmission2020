@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7553fd03-1a68-47e5-b19c-6ff669c34736" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/EmployeeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/EmployeeInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/design/FortuneEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/design/FortuneEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/ProcessStudentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/ProcessStudentInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,34 +189,34 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state width="424" height="466" key="DebuggerActiveHint/0.23.1440.831@0.23.1440.831" timestamp="1586383033292" />
-    <state width="1158" height="119" key="GridCell.Tab.0.bottom" timestamp="1586694476998">
+    <state width="1158" height="119" key="GridCell.Tab.0.bottom" timestamp="1586700965457">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state width="1158" height="119" key="GridCell.Tab.0.bottom/0.23.1440.817@0.23.1440.817" timestamp="1586694476998" />
+    <state width="1158" height="119" key="GridCell.Tab.0.bottom/0.23.1440.817@0.23.1440.817" timestamp="1586700965457" />
     <state width="1059" height="212" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1586500005427" />
     <state width="1059" height="170" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1586513346154" />
     <state width="1358" height="251" key="GridCell.Tab.0.bottom/0.23.1440.831@0.23.1440.831" timestamp="1586383010674" />
     <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1586383676637" />
-    <state width="1158" height="119" key="GridCell.Tab.0.center" timestamp="1586694476995">
+    <state width="1158" height="119" key="GridCell.Tab.0.center" timestamp="1586700965456">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state width="1158" height="119" key="GridCell.Tab.0.center/0.23.1440.817@0.23.1440.817" timestamp="1586694476995" />
+    <state width="1158" height="119" key="GridCell.Tab.0.center/0.23.1440.817@0.23.1440.817" timestamp="1586700965456" />
     <state width="1059" height="212" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1586500005425" />
     <state width="1059" height="170" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1586513346151" />
     <state width="1358" height="251" key="GridCell.Tab.0.center/0.23.1440.831@0.23.1440.831" timestamp="1586383010673" />
     <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1586383676637" />
-    <state width="1158" height="119" key="GridCell.Tab.0.left" timestamp="1586694476994">
+    <state width="1158" height="119" key="GridCell.Tab.0.left" timestamp="1586700965455">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state width="1158" height="119" key="GridCell.Tab.0.left/0.23.1440.817@0.23.1440.817" timestamp="1586694476994" />
+    <state width="1158" height="119" key="GridCell.Tab.0.left/0.23.1440.817@0.23.1440.817" timestamp="1586700965455" />
     <state width="1059" height="212" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1586500005424" />
     <state width="1059" height="170" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1586513346151" />
     <state width="1358" height="251" key="GridCell.Tab.0.left/0.23.1440.831@0.23.1440.831" timestamp="1586383010673" />
     <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1586383676637" />
-    <state width="1158" height="119" key="GridCell.Tab.0.right" timestamp="1586694476996">
+    <state width="1158" height="119" key="GridCell.Tab.0.right" timestamp="1586700965456">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state width="1158" height="119" key="GridCell.Tab.0.right/0.23.1440.817@0.23.1440.817" timestamp="1586694476996" />
+    <state width="1158" height="119" key="GridCell.Tab.0.right/0.23.1440.817@0.23.1440.817" timestamp="1586700965456" />
     <state width="1059" height="212" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1586500005426" />
     <state width="1059" height="170" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1586513346152" />
     <state width="1358" height="251" key="GridCell.Tab.0.right/0.23.1440.831@0.23.1440.831" timestamp="1586383010674" />
@@ -251,17 +249,17 @@
     <state width="1059" height="212" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1586509369347" />
     <state width="1358" height="251" key="GridCell.Tab.1.right/0.23.1440.831@0.23.1440.831" timestamp="1586383010851" />
     <state width="1358" height="143" key="GridCell.Tab.1.right/0.23.1440.832@0.23.1440.832" timestamp="1586383576420" />
-    <state x="283" y="23" width="1024" height="821" key="SettingsEditor" timestamp="1586599228865">
-      <screen x="0" y="23" width="1440" height="817" />
+    <state x="283" y="23" width="1024" height="821" key="SettingsEditor" timestamp="1586765204069">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="283" y="23" key="SettingsEditor/0.23.1440.817@0.23.1440.817" timestamp="1586599228865" />
-    <state x="283" y="23" width="1024" height="821" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1586495566763" />
+    <state x="283" y="23" width="1024" height="821" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1586765204069" />
     <state x="283" y="23" width="1024" height="832" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1586275290765" />
-    <state x="541" y="283" key="com.intellij.ide.util.TipDialog" timestamp="1586672841529">
-      <screen x="0" y="23" width="1440" height="815" />
+    <state x="541" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1586756408465">
+      <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="541" y="283" key="com.intellij.ide.util.TipDialog/0.23.1440.815@0.23.1440.815" timestamp="1586672841529" />
-    <state x="541" y="284" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1586560747705" />
+    <state x="541" y="284" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1586756408465" />
     <state x="724" y="491" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586594220214">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
@@ -274,6 +272,10 @@
       <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="503" y="122" width="673" height="708" key="find.popup/0.23.1440.817@0.23.1440.817" timestamp="1586693964795" />
+    <state x="284" y="90" key="refactoring.ChangeSignatureDialog" timestamp="1586768211790">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="284" y="90" key="refactoring.ChangeSignatureDialog/0.23.1440.821@0.23.1440.821" timestamp="1586768211790" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -315,11 +317,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java</url>
           <line>146</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
@@ -332,6 +329,11 @@
           <url>file://$PROJECT_DIR$/src/design/EmployeeInfo.java</url>
           <line>115</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/databases/ConnectToSqlDB.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

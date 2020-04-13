@@ -6,10 +6,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProcessStudentInfo {
 
@@ -50,23 +47,35 @@ public class ProcessStudentInfo {
 				
 				List<Student> seleniumStudents = new ArrayList<Student>();
 				List<Student> qtpStudents = new ArrayList<Student>();
+
 				
 				//Create XMLReader object.
 				XmlReader xmlReader = new XmlReader();
-				
-				
+
 				//Parse Data using parseData method and then store data into Selenium ArrayList.
 				seleniumStudents = xmlReader.parseData(tag, pathSelenium);
 
 				//Parse Data using parseData method and then store data into Qtp ArrayList.
-
+				qtpStudents = xmlReader.parseData(tag, pathQtp);
 				
 				//add Selenium ArrayList data into map.
+				list.put("Selenium Student", seleniumStudents);
 
 				//add Qtp ArrayList data into map.
-		
+				list.put("Qtp Student", qtpStudents);
 		      	
 				//Retrieve map data and display output.
+				for (Map.Entry<String, List<Student>> st : list.entrySet()) {
+					System.out.println(st);
+				}
+				Iterator itr = list.keySet().iterator();
+				while (itr.hasNext()) {
+					List st = list.get(itr.next());
+					for (Object str : st) {
+						System.out.println(str);
+					}
+
+				}
 
 
 
@@ -83,6 +92,23 @@ public class ProcessStudentInfo {
 			   }
 
 			   //Retrieve Selenium students from Database
+
+				ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+				connectToSqlDB.createTableFromStringToMySql("Qtp", "mapKey", "mapValue");
+				connectToSqlDB.createTableFromStringToMySql("Selenium", "mapKey", "mapValue");
+				for (Object str : list.keySet()) {
+					for (Object str1 : list.get(str)) {
+						List<String> list1 = new ArrayList<String>();
+						list1.add(str.toString()); // adds key
+						list1.add(str1.toString()); // adds value
+						// Insert data in the database
+						////Store Selenium data into Selenium & QTP table in Database
+						if (str.equals("sel")) {
+							connectToSqlDB.insertDataFromArrayListToSqlTable(list1,"Selenium","Students");
+							connectToSqlDB.insertDataFromArrayListToSqlTable(list1,"QTP","Students");
+						}
+					}
+				}
 
 
 			}
